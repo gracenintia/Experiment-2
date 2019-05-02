@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+#include <cmath>
+
+using namespace std;
+
+int main ()
+{
+	int a;
+	
+	cout << "This program count numbers up to 10 and the succeeding count numbers by two until 30." << endl;
+
+	for (a=1; a<=10; a++)
+        {
+    	    cout << a << ",";
+	    }
+	
+	for (a=12; a<=28; (a += 1)++)
+        {
+    	    cout << a << ",";
+    	}
+
+	
+	if (a=30)
+	    {
+            cout << a;
+	    }
+	
+		
+	
+	_getch();
+	return 0;
+}

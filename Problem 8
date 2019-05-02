@@ -1,0 +1,39 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main() 
+{
+    int number, a, b, c, d, e, f, g, h, i, j;
+    
+    cout << "Enter your desired number:"; cin >> number;
+    
+    a = (1 * number );
+    b = (2 * number );
+    c = (3 * number );
+    d = (4 * number );
+    e = (5 * number );
+    f = (6 * number );
+    g = (7 * number );
+    h = (8 * number );
+    i = (9 * number );
+    j = (10 * number );
+    
+    cout << "The Multiplication table of" << ' ' << number<< ":" << endl;
+    
+    cout << "1 * " << ' ' << number << "=" << ' ' << a << endl;
+    cout << "2 * " << ' ' << number << "=" << ' ' << b << endl;
+    
+    cout << "3 * " << ' ' << number << "=" << ' ' << c << endl;
+    cout << "4 * " << ' ' << number << "=" << ' ' << d << endl;
+    cout << "5 * " << ' ' << number << "=" << ' ' << e << endl;
+    cout << "6 * " << ' ' << number << "=" << ' ' << f << endl;
+    cout << "7 * " << ' ' << number << "=" << ' ' << g << endl;
+    cout << "8 * " << ' ' << number << "=" << ' ' << h << endl;
+    cout << "9 * " << ' ' << number << "=" << ' ' << i << endl;
+    cout << "10 * " << ' ' << number << "=" << ' ' << j << endl;
+    
+    _getch();
+    return 0;
+}

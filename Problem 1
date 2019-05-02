@@ -1,0 +1,65 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std; 
+
+int main () 
+ {
+ 	int hours, pA, pB;
+ 	char package; 
+ 	const int packageA = 995;
+ 	const int packageB = 1495;
+ 	const int packageC = 1995;
+ 	
+ 	
+ 	cout << "Welcome to Golden Internet Service Provider!" << endl;
+ 	cout << "We offer three packages that you can choose from:" << endl;
+ 	cout << "Package A: For P995/mo 10 hrs of access are provided. Additional hours are P20/hr." << endl;
+ 	cout << "Package B: For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr." << endl;
+ 	cout << "Package C: For P1995/mo of unlimited access is provided." << endl;
+ 	
+ 	
+ 	cout << "Enter chosen package (Ex. A): "; cin >> package; 
+ 	
+ 	if ((package == 'A') || (package == 'B') || (package == 'C'))
+	{
+		cout << "Enter the number of hours consumed in a month: "; cin >> hours;
+		if (hours > 744 || hours < 1)
+		cout << "You have entered invalid hours" << endl;
+	}
+ 
+	
+	switch (package) 
+	{
+		case 'A':
+			if (hours <= 10)
+			cout << "Total Amount Due:" << ' ' << packageA << endl;
+			else if (hours > 10)
+			pA = (packageA + ((hours - 10) * 20));
+			cout << "Total Amount Due:" << ' ' << pA << endl;
+			break; 
+			
+		case 'B':
+			if (hours <= 20)
+			cout << "Total Amount Due:" << ' ' << packageB << endl;
+			else if (hours > 20)
+			pB = (packageB + ((hours - 20) * 10));
+			cout << "Total Amount Due:" << ' ' << pB << endl;
+			break;
+			
+		case 'C':
+			if (hours >= 1 && hours <= 744)
+			cout << "Total Amount Due:" << ' ' << packageC << endl;
+			break;
+			
+		default:
+			if (hours > 744)
+			cout << "You have entered invalid number of hours" << endl;
+				
+	}
+	
+	
+	
+	_getch();
+	return 0;
+ }
